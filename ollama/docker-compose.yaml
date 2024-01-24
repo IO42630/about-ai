@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+
+
+
+    ollama:
+        container_name: ollama
+        image: io42630/ollama
+        volumes:
+            - /media/pool/services/ollama:/root/.ollama
+
+

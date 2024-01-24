@@ -1,0 +1,1 @@
+I suppose ollama simplifies the process of downloading and interacting with ll models
