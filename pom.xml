@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>about-ai</name>
-
-
+    <modules>
+        <module>a-neuro</module>
+    </modules>
 </project>
