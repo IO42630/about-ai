@@ -7,7 +7,29 @@ services:
     ollama:
         container_name: ollama
         image: io42630/ollama
+        ports:
+            - "44000:11434"
         volumes:
             - /media/pool/services/ollama:/root/.ollama
+        networks:
+            ollama-net:
 
 
+    ollama-webui:
+        container_name: ollama-webui
+        image: io42630/ollama-webui
+        volumes:
+            - /media/pool/services/ollama-webui:/app/backend/data
+        depends_on:
+            - ollama
+        ports:
+            - "44020:8080"
+        environment:
+            - 'OLLAMA_API_BASE_URL=http://ollama:11434/api'
+        networks:
+            ollama-net:
+
+
+
+networks:
+    ollama-net:

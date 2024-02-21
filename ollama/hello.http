@@ -1,0 +1,9 @@
+POST http://localhost:44000/api/generate
+Content-Type: application/json
+
+{
+     "model": "tinyllama",
+    "prompt":"Hi! Who are you?",
+
+    "stream": false
+}
