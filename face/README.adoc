@@ -1,0 +1,32 @@
+== Face
+
+* `zero-shot` : no fine-tuning, model will return probability scores for provided labels
+
+
+
+
+GPT-like (also called auto-regressive Transformer models)
+BERT-like (also called auto-encoding Transformer models)
+BART/T5-like (also called sequence-to-sequence Transformer models)
+
+
+
+=== Training Types
+
+
+* `pre-training` : train from scratch. weights are initialized randomly. no prior knowledge is used.
+** large amoundt of data & compute
+** result : general-purpose model
+* `fine-tuning` :
+** small amount of data & compute
+* `self-supervised training` : objective is computed from input data only, no labels are needed
+* `transfer learning` : model is trained on a task A and then fine-tuned on a task B
+
+
+
+=== Architecture
+Encoder-only models: Good for tasks that require understanding of the input, such as sentence classification and named entity recognition.
+Decoder-only models: Good for generative tasks such as text generation.
+Encoder-decoder models or sequence-to-sequence models: Good for generative tasks that require an input, such as translation or summarization.
+
+
