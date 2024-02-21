@@ -1,4 +1,14 @@
+= about-ai
+:stylesheet: ../../shared/adoc-styles.css
+:toc:
+:toclevels: 4
 
 
+== ollama
 
-ollama serve
+* webui: http://localhost:44020/
+** register with a fake email:pwd
+* ollama service :
+** either use the `hello.http` provided here
+** or go to IDEA -> Services -> Docker -> ollama -> Terminal -> `ollama run tinyllama
+
